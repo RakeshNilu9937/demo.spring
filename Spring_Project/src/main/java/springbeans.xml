@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+    <bean id="con" class="com.entity.Country">
+        <property name="c_name" value="India"/>
+        <property name="std" value="+91"/>
+        <property name="num" value="34"/>
+        <property name="s" ref="st"/>
+    </bean>
+    <bean id="st" class="com.entity.State">
+        <property name="St_num" value="23"/>
+        <property name="st_name" value="Odisha"/>
+        <property name="dt_name" value="Ganjam"/>
+        <property name="e" ref="emp"/>
+    </bean>
+    <bean id="emp" class="com.entity.Employee">
+        <property name="id" value="007"/>
+        <property name="e_name" value="Rakesh"/>
+        <property name="email" value="rakesh@gmail.com"/>
+        <property name="ph_num" value="8908090499"/>
+        <property name="sal" value="679822"/>
+    </bean>
+</beans>
